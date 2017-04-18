@@ -1,8 +1,8 @@
-##CSocket
+## CSocket
 *  概述<br>
 	对socket进行了一些封装，简化了使用的时候的初始化工作。接受发送数据自动异步处理，用户无需关心线程同步问题。
 *  怎么使用<br>
-	#####SocketServer:用户只需要添加相应的回掉函数即可。
+	##### SocketServer:用户只需要添加相应的回掉函数即可。
 	1. `onStart` 启动成功
 	```cpp
 		server->onStart = [](const char* ip) {
@@ -29,9 +29,9 @@
 	};
 	};
 	```
-	5. `startServer(ipPort，isAsyn)` 开启服务，第一个参数是端口号，第二个参数是是否异步处	理消息
+	5. `startServer(ipPort，isAsyn)` 开启服务，第一个参数是端口号，第二个参数是是否异步处理消息
 	
-	#####SocketClient:用户只需要添加相应的回掉函数即可。
+	##### SocketClient:用户只需要添加相应的回掉函数即可。
 	1. `connectServer` 开启连接
 	```cpp
 		client->connectServer("127.0.0.1", 6010);
